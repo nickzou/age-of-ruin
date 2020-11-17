@@ -8,8 +8,8 @@ vendor/
 sql
 
 #src builds
-src/custom-theme/css/
-src/custom-theme/js/
+src/age-of-ruin/css/
+src/age-of-ruin/js/
 
 #wordpress folders
 public/robots.txt
@@ -28,8 +28,8 @@ public/wp-content/*.php
 public/*.php
 
 #theme dist
-public/wp-content/themes/custom-theme/css/
-public/wp-content/themes/custom-theme/js/
+public/wp-content/themes/age-of-ruin/css/
+public/wp-content/themes/age-of-ruin/js/
 
 #local adminer ignore
 public/local-adminer-*.php

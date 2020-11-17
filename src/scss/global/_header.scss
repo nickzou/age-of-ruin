@@ -1,0 +1,8 @@
+.site-header {
+    height: $header-height;
+    background-color: $off-white;
+    @extend %drop-shadow-thin;
+    .container, .row {
+        height: 100%;
+    }
+}

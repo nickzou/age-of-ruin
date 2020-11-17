@@ -1,0 +1,26 @@
+.input-wrapper {
+    background-color: white;
+    @extend %drop-shadow-thin;
+    padding: 16px;
+    width: 100%;
+    max-width: 315px;
+    input {
+        @extend %merriweather;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        width: 100%;
+        background: none;
+        border: none;
+        font-size: rem(16px);
+        line-height: rem(16px);
+        padding: 0;
+        margin: 0;
+        &:focus {
+            outline: none;
+        }
+        &::placeholder {
+            color: $grey;
+        }
+    }
+}

@@ -28,6 +28,8 @@ mix.js(`src/js/app.js`, `${public}/themes/${theme}/js/app.js`)
     useBuiltIns: "usage",
     targets: {"firefox": "50", "ie": 11}
  })
+ .js(`src/js/template-login.js`, `${public}/themes/${theme}/js/template-login.js`)
+ .sass(`src/scss/template-login.scss`, `${public}/themes/${theme}/css/template-login.css`)
  .browserSync({
     proxy: virtualHost,
     files: [`${public}/themes/${theme}/**`]
