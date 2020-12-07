@@ -1,26 +1,58 @@
-.input-wrapper {
-    background-color: white;
-    @extend %drop-shadow-thin;
-    padding: 16px;
+label {
     width: 100%;
     max-width: 315px;
-    input {
-        @extend %merriweather;
-        font-weight: 300;
-        text-transform: uppercase;
-        letter-spacing: 0.1rem;
-        width: 100%;
-        background: none;
-        border: none;
-        font-size: rem(16px);
-        line-height: rem(16px);
-        padding: 0;
-        margin: 0;
-        &:focus {
-            outline: none;
+}
+
+input[type="text"], input[type="password"] {
+    @extend %merriweather-light;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    background-color: white;
+    @extend %drop-shadow-thin;
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: rem(16px);
+    line-height: rem(16px);
+    padding: 16px;
+    margin: 0;
+    transition: 0.2s ease-in-out;
+    &:focus {
+        outline: none;
+        margin: 0 -5px;
+        width: calc(100% + 10px);
+    }
+    &::placeholder {
+        color: $grey;
+    }
+
+}
+
+button {
+    @extend %flex-center;
+    border: none;
+    background: none;
+    border: 2px solid $gold;
+    padding: 8px;
+    @extend %cormorant-bold;
+    font-size: rem(26px);
+    line-height: rem(26px);
+    letter-spacing: 3.5%;
+    text-transform: uppercase;
+    color: $gold;
+    transition: 0.3s ease-in-out;
+    &:hover {
+        background-color: $gold;
+        color: white;
+        path {
+            fill: white;
         }
-        &::placeholder {
-            color: $grey;
-        }
+    }
+    svg {
+        margin-right: 8px;
+    }
+    path {
+        transform: 0.3s ease-in-out;
     }
 }
